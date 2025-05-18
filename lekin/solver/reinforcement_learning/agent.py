@@ -3,9 +3,9 @@ Agent class for reinforcement learning-based job shop scheduling.
 """
 
 import logging
+import random
 from typing import Any, Dict, List, Optional, Tuple
 
-import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
