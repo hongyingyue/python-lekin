@@ -37,7 +37,8 @@
 
 ## 快速入门
 
-[![Open In Colab](https://colab.research.google.com/drive/1zHqYZFZNvLE7aoDcBUh7TCK7oHfXQkLi?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zHqYZFZNvLE7aoDcBUh7TCK7oHfXQkLi?usp=sharing)
+
 
 ### 安装
 
