@@ -5,9 +5,9 @@ name: Test
 
 on:
   push:
-    branches: [master, main, dev]
+    branches: [main, dev]
   pull_request:
-    branches: [master, main, dev]
+    branches: [main, dev]
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macOS-latest] # add windows-2019 when poetry allows installation with `-f` flag
-        python-version: [3.8, '3.10'] # python 3.9 is not supported by all dependencies yet
+        python-version: [3.8, '3.11'] # python 3.9 is not supported by all dependencies yet
 
     steps:
       - uses: actions/checkout@v4
@@ -42,7 +42,7 @@ jobs:
         run: poetry config virtualenvs.in-project true
 
       - name: Set up cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache
         with:
           path: .venv
@@ -98,7 +98,7 @@ jobs:
           python-version: 3.8
 
       - name: Cache pip
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('docs/requirements_docs.txt') }}
