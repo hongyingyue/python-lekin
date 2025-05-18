@@ -35,16 +35,20 @@ As a core function in **APS (advanced planning and scheduler)**, it helps manufa
 
 # **DEVELOPING - NOT FINISHED AND DON'T USE IT NOW!**
 
-## Feature
 
-- constrained optimization
-  - route
-  - production
-  - material kit
-  - together
+## Features
 
-- soft constrained optimization
-  - objective
+- Multiple solving strategies:
+  - Continuous Time Planning (CTP)
+  - Construction Heuristics
+  - Meta-heuristics (Genetic Algorithm, Simulated Annealing)
+  - Reinforcement Learning
+  - Operation Research methods
+- Extensible architecture for custom solvers
+- Comprehensive constraint handling
+- Performance metrics and visualization
+- Parallel solving capabilities
+- Solution validation and verification
 
 
 ## Tutorial
@@ -95,6 +99,20 @@ In real world, Lekin integrates with MES to deploy production plans on the shop 
 
 Metaheuristics combined with Construction
 Heuristics to initialize is the recommended choice.
+
+
+### Adding New Constraints
+
+```python
+from lekin.solver.constraints import BaseConstraint
+
+class MyCustomConstraint(BaseConstraint):
+    def check(self, solution):
+        # Implement your constraint checking logic
+        pass
+```
+
+
 
 ## Citation
 ```

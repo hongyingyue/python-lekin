@@ -29,9 +29,9 @@ black = 1
 [tool.poetry]
 name = "lekin"
 readme = "README.md"  # Markdown files are supported
-version = "0.0.2"  # is being replaced automatically
+version = "0.0.1"  # is being replaced automatically
 
-authors = ["Longxing Tan"]
+authors = ["Hongying Yue"]
 classifiers = [
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
@@ -52,7 +52,7 @@ documentation = "https://python-lekin.readthedocs.io"
 homepage = "https://python-lekin.readthedocs.io"
 
 [tool.poetry.dependencies]
-python = ">=3.7,<3.11"
+python = ">=3.7"
 #pandas = "^1.1.0"
 matplotlib = "*"
 

@@ -13,27 +13,31 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read  # for actions/checkout
+      id-token: write  # required for trusted publishing (optional)
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.11'
 
-      - name: Install poetry
-        shell: bash
+      - name: Install build tools
         run: |
-          curl -sSL https://install.python-poetry.org | python3 -
-          python -m pip install poetry-dynamic-versioning[plugin]
+          python -m pip install --upgrade pip
+          pip install build twine
 
-      - name: Set poetry path variable
-        run: echo "/Users/runner/.local/bin" >> $GITHUB_PATH
-
-      - name: Build
+      - name: Build the package
         run: |
-          poetry build
+          python -m build
 
-      - name: Publish distribution 📦 to PyPI
-        if: startsWith(github.event.ref, 'refs/tags') || github.event_name == 'release'
+      - name: Publish to PyPI
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
         run: |
-          poetry publish --username "${{ secrets.PYPI_USERNAME }}" --password "${{ secrets.PYPI_PASSWORD }}"
+          twine upload dist/*

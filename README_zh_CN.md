@@ -10,8 +10,6 @@
 [lint-url]: https://github.com/HongyingYue/python-lekin/actions/workflows/lint.yml?query=branch%3Amain
 [docs-image]: https://readthedocs.org/projects/python-lekin/badge/?version=latest
 [docs-url]: https://python-lekin.readthedocs.io/en/latest/
-[coverage-image]: https://codecov.io/gh/HongyingYue/python-lekin/branch/main/graph/badge.svg
-[coverage-url]: https://codecov.io/github/HongyingYue/python-lekin?branch=main
 
 <h1 align="center">
 <img src="./docs/source/_static/logo.svg" width="400" align=center/>
@@ -23,7 +21,6 @@
 [![Build Status][build-image]][build-url]
 [![Lint Status][lint-image]][lint-url]
 [![Docs Status][docs-image]][docs-url]
-[![Code Coverage][coverage-image]][coverage-url]
 
 **[文档](https://python-lekin.readthedocs.io)** | **[教程](https://python-lekin.readthedocs.io/en/latest/tutorials.html)** | **[发布日志](https://python-lekin.readthedocs.io/en/latest/CHANGELOG.html)** | **[English](https://github.com/HongyingYue/python-lekin/blob/main/README.md)**
 

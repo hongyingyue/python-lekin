@@ -29,8 +29,8 @@ import lekin  # isort:skip
 # -- Project information -----------------------------------------------------
 
 project = "python-lekin"
-copyright = "2022, Yue Tan"
-author = "Yue Tan"
+copyright = "2025, Hongying Yue"
+author = "Hongying Yue"
 
 
 # -- General configuration ---------------------------------------------------
