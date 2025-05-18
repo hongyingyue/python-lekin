@@ -1,7 +1,7 @@
 [license-image]: https://img.shields.io/badge/License-Apache%202.0-blue.svg
 [license-url]: https://opensource.org/licenses/Apache-2.0
 [pypi-image]: https://badge.fury.io/py/lekin.svg
-[pypi-url]: https://pypi.python.org/pypi/python-lekin
+[pypi-url]: https://pypi.python.org/pypi/lekin
 [pepy-image]: https://pepy.tech/badge/lekin/month
 [pepy-url]: https://pepy.tech/project/lekin
 [build-image]: https://github.com/HongyingYue/python-lekin/actions/workflows/test.yml/badge.svg?branch=main

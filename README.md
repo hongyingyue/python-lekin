@@ -53,7 +53,8 @@ As a core function in **APS (advanced planning and scheduler)**, it helps manufa
 
 ## Tutorial
 
-[![Open In Colab](https://colab.research.google.com/drive/1zHqYZFZNvLE7aoDcBUh7TCK7oHfXQkLi?usp=sharing)]
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zHqYZFZNvLE7aoDcBUh7TCK7oHfXQkLi?usp=sharing)
+
 
 **Installation**
 
