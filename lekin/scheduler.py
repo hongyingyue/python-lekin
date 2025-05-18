@@ -13,7 +13,6 @@ import logging
 from typing import Any, Callable, Dict, List, Optional, Tuple, Union
 
 from lekin.datasets.check_data import check_data
-from lekin.objective import BaseObjective
 from lekin.solver import BaseSolver
 
 logger = logging.getLogger(__name__)
@@ -28,7 +27,7 @@ class Scheduler(ABC):
 
     def __init__(
         self,
-        objective: BaseObjective,
+        objective: "BaseObjective",
         solver: BaseSolver,
         max_operations: int,
         scheduling_type: str = "job_shop",
